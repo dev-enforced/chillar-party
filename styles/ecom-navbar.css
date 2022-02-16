@@ -1,13 +1,13 @@
-.chillar-ecom-nav{
-    background-color: var(--ecomm-secondary);
-    padding:3rem;
-    color: var(--ecomm-secondary-text);
+.chillar-ecom-nav {
+  background-color: var(--ecomm-secondary);
+  padding: 3rem;
+  color: var(--ecomm-secondary-text);
 }
 
-.ecom-nav-links{
-    gap:1rem;
+.ecom-nav-links {
+  gap: 1rem;
 }
 
-.brand-icon{
-    height: 3.4rem;
+.brand-icon {
+  height: 3.4rem;
 }
