@@ -18,6 +18,11 @@ html {
   flex-flow: row wrap;
 }
 
+.flex-grow-1{
+  flex-grow:1;
+}
+
+
 .flex-column {
   display: flex;
   flex-flow: column wrap;

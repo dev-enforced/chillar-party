@@ -12,9 +12,6 @@ body {
   height: 100vh;
 }
 
-.main-content-container {
-  flex-grow: 1;
-}
 
 .image-banner {
   background-image: url("../assets/images/brand-items.png");
@@ -22,14 +19,9 @@ body {
   background-repeat: no-repeat;
   background-position: center center;
   height: 40rem;
-  display: flex;
   width: 100%;
 }
 
-.banner-content {
-  display: flex;
-  flex-flow: column wrap;
-}
 
 .banner-title {
   font-family: "Amatic SC", cursive;
@@ -39,8 +31,6 @@ body {
 
 .ecom-sections {
   background-color: var(--ecomm-secondary);
-  display: flex;
-  flex-direction: column;
   color: var(--ecomm-secondary-text);
 }
 
