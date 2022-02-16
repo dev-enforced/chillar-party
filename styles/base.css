@@ -1,0 +1,53 @@
+:root{
+    --ecomm-bg:#41336f;
+    --ecomm-txt:#f9faff;
+    --ecomm-secondary:#d1e4eb;
+    --ecomm-secondary-text:#49336e;
+
+    --ecomm-clothes:#b2691a;
+    --ecomm-food:#ff8185;
+    --ecomm-content-box:rgba(0,0,0,0.308)
+
+}
+html{
+    font-size: 75%;
+}
+.flex-row{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.flex-column{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+}
+
+.flex-space-between{
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-center{
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-align-center{
+    align-items: center;
+}
+.flex-justify-center{
+    justify-content: center;
+}
+
+.flex-nowrap{
+    flex-wrap: nowrap;
+}
+
+.pos-relative{
+    position: relative;
+}
+.pos-fixed{
+    position:fixed;
+}
+
