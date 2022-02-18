@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta Information -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Roshan J" />
+    <meta name="description"
+        content="Gentle UI is a component library having pre built components with the motive of creating good UIs." />
+
+    <!-- Custom Favicon -->
+    <link rel="icon" href="https://img.icons8.com/color/64/000000/boy-stroller.png" />
+
+    <!-- Fonts and icons stylesheets -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Roboto+Slab:wght@300;500;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+    <!-- Stylesheets attached -->
+    <link rel="stylesheet" href="https://deploy-preview-12--gentle-ui.netlify.app/gentle-imports.css" />
+
+    <!-- Main stylesheet added -->
+    <link rel="stylesheet" href="../styles/product-listing.css">
+    <title>Products | Chillar Party </title>
+</head>
+
+<body>
+    <div class="general-page-layout">
+        <!-- Navigation begins -->
+        <nav class="gentle-navbar chillar-ecom-nav navbar-component">
+            <div class="brand">
+                <a href="../index.html" class="link-none">
+                    <img loading="lazy" src="../assets/images/brand-logo.png" alt="brand description"
+                        class="brand-icon" />
+                </a>
+            </div>
+            <div class="gentle-search-group gentle-navbar-search">
+                <i class="fas fa-search search-icon"></i>
+                <input type="search" class="gentle-search-bar" placeholder="Search-for-products" />
+            </div>
+            <ul class="gentle-nav-links ecom-nav-links">
+                <li>
+                    <a class="link-none" href=""> LOGIN </a>
+                </li>
+                <li>
+                    <a class="link-none" href="">
+                        <div class="badge mx-2">
+                            <i class="fas fa-cart-plus fa-2x"></i>
+                            <div class="badge-number gentle-flex-center">
+                                <span>2</span>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a class="link-none" href="">
+                        <div class="badge mx-2">
+                            <i class="fas fa-heart fa-2x"></i>
+                            <div class="badge-number gentle-flex-center">
+                                <span>2</span>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <!-- Navigation ends -->
+
+
+        <aside class="side-navigation-container p-10">
+            <div class="side-navigation-content gentle-flex-gap flex-column">
+                <div class="side-nav-p1 gentle-flex flex-space-between mb-3">
+                    <h3 class="txt-sm">
+                        <a href="#" class="link-none">FILTERS</a>
+                    </h3>
+                    <h3 class="txt-sm" id="show-hide">
+                        <a href="#" class="link-none">SHOW</a>
+                    </h3>
+                    <h3 class="txt-xs text-underline">
+                        <a href="#" class="link-none">CLEAR</a>
+                    </h3>
+                </div>
+                <div class="side-nav flex-column py-3">
+                    <h3 class="txt-sm mb-3">PRICE</h3>
+                    <ul class="gentle-flex-gap flex-space-between mb-3">
+                        <li>100</li>
+                        <li>150</li>
+                        <li>200</li>
+                    </ul>
+                    <div class="filter-input-section">
+                        <input type="range" min="100" max="200" value="150" class="filter-input-slider">
+                    </div>
+                </div>
+                <div class="side-nav gentle-flex-gap flex-column py-3">
+                    <h3 class="txt-sm mb-3">Category</h3>
+                    <ul class="gentle-flex-gap flex-column flex-space-between txt-sm">
+                        <li>
+                            <input id="checkbox-1" type="checkbox" name="checkbox">
+                            <label for="checkbox-1">SKINCARE</label>
+                        </li>
+                        <li>
+                            <input id="checkbox-2" type="checkbox" name="checkbox">
+                            <label for="checkbox-2">CLOTHING</label>
+                        </li>
+                        <li>
+                            <input id="checkbox-3" type="checkbox" name="checkbox">
+                            <label for="checkbox-3">MEALTIME</label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="side-nav gentle-flex-gap flex-column py-3">
+                    <h3 class="txt-sm mb-3">Ratings</h3>
+                    <ul class="gentle-flex-gap flex-column flex-space-between txt-sm">
+                        <li>
+                            <input id="radio-1" type="radio" name="radio">
+                            <label for="radio-1">4 stars and above</label>
+                        </li>
+                        <li>
+                            <input id="radio-2" type="radio" name="radio">
+                            <label for="radio-2">3 stars and above</label>
+                        </li>
+                        <li>
+                            <input id="radio-3" type="radio" name="radio">
+                            <label for="radio-3">2 stars and above</label>
+                        </li>
+                        <li>
+                            <input id="radio-4" type="radio" name="radio">
+                            <label for="radio-4">2 stars and above</label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="side-nav gentle-flex-gap flex-column">
+                    <h3 class="txt-sm mb-3">Ratings</h3>
+                    <ul class="gentle-flex-gap flex-column flex-space-between txt-sm">
+                        <li>
+                            <input type="radio" id="radio-5" name="radio">
+                            <label for="radio-5">Price - Low to High</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="radio-5" name="radio">
+                            <label for="radio-5">Price - High to Low</label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main content -->
+        <section class="main-content-container p-8">
+            <p class="text-bold txt-sm m-8">Showing all products</p>
+            <div class="gentle-grid-responsive py-8">
+                <div class="card card-vertical">
+                    <div class="badge-content">
+                        TRENDING
+                    </div>
+                    <div class="card-icon-action card-badge">
+                        <a class="link-none" href="#">
+                            <i class="fas fa-heart wish-icon" aria-hidden="true"></i></a>
+                    </div>
+                    <img loading="lazy"
+                        src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/nusnyjv4vv1teca0txre"
+                        alt="Pickle by Jhaji" class="card-media-img  p-0" />
+                    <div class="card-content">
+                        <h4 class="txt-bold card-details-title">Proteinated Milk</h4>
+                        <p class="card-details-subtitle">By Humpy A2</p>
+                        <p class="card-pricing">
+                            <span class="card-price">₹600</span>
+                            <del class="card-original-price">₹1000</del>
+                            <span class="card-discount">40% off</span>
+                        </p>
+                    </div>
+                    <div class="card-actions">
+                        <button class="btn btn-warning btn-warning-hover">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="card card-vertical">
+                    <div class="badge-content">
+                        TRENDING
+                    </div>
+                    <div class="card-icon-action card-badge">
+                        <a class="link-none" href="#">
+                            <i class="fas fa-heart wish-icon" aria-hidden="true"></i></a>
+                    </div>
+                    <img loading="lazy"
+                        src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/nusnyjv4vv1teca0txre"
+                        alt="Pickle by Jhaji" class="card-media-img  p-0" />
+                    <div class="card-content">
+                        <h4 class="txt-bold card-details-title">Proteinated Milk</h4>
+                        <p class="card-details-subtitle">By Humpy A2</p>
+                        <p class="card-pricing">
+                            <span class="card-price">₹600</span>
+                            <del class="card-original-price">₹1000</del>
+                            <span class="card-discount">40% off</span>
+                        </p>
+                    </div>
+                    <div class="card-actions">
+                        <button class="btn btn-warning btn-warning-hover">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="card card-vertical">
+                    <div class="badge-content">
+                        TRENDING
+                    </div>
+                    <div class="card-icon-action card-badge">
+                        <a class="link-none" href="#">
+                            <i class="fas fa-heart wish-icon" aria-hidden="true"></i></a>
+                    </div>
+                    <img loading="lazy"
+                        src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/nusnyjv4vv1teca0txre"
+                        alt="Pickle by Jhaji" class="card-media-img  p-0" />
+                    <div class="card-content">
+                        <h4 class="txt-bold card-details-title">Proteinated Milk</h4>
+                        <p class="card-details-subtitle">By Humpy A2</p>
+                        <p class="card-pricing">
+                            <span class="card-price">₹600</span>
+                            <del class="card-original-price">₹1000</del>
+                            <span class="card-discount">40% off</span>
+                        </p>
+                    </div>
+                    <div class="card-actions">
+                        <button class="btn btn-warning btn-warning-hover">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="card card-vertical">
+                    <div class="card-icon-action card-badge">
+                        <a class="link-none" href="#">
+                            <i class="fas fa-heart wish-icon" aria-hidden="true"></i></a>
+                    </div>
+                    <img loading="lazy"
+                        src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/nusnyjv4vv1teca0txre"
+                        alt="Pickle by Jhaji" class="card-media-img  p-0" />
+                    <div class="card-content">
+                        <h4 class="txt-bold card-details-title">Proteinated Milk</h4>
+                        <p class="card-details-subtitle">By Humpy A2</p>
+                        <p class="card-pricing">
+                            <span class="card-price">₹600</span>
+                            <del class="card-original-price">₹1000</del>
+                            <span class="card-discount">40% off</span>
+                        </p>
+                    </div>
+                    <div class="card-actions">
+                        <button class="btn btn-link btn-error btn-error-hover">OUT OF STOCK</button>
+                    </div>
+                </div>
+                <div class="card card-vertical">
+                    <div class="badge-content">
+                        TRENDING
+                    </div>
+                    <div class="card-icon-action card-badge">
+                        <a class="link-none" href="#">
+                            <i class="fas fa-heart wish-icon" aria-hidden="true"></i></a>
+                    </div>
+                    <img loading="lazy"
+                        src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/nusnyjv4vv1teca0txre"
+                        alt="Pickle by Jhaji" class="card-media-img  p-0" />
+                    <div class="card-content">
+                        <h4 class="txt-bold card-details-title">Proteinated Milk</h4>
+                        <p class="card-details-subtitle">By Humpy A2</p>
+                        <p class="card-pricing">
+                            <span class="card-price">₹600</span>
+                            <del class="card-original-price">₹1000</del>
+                            <span class="card-discount">40% off</span>
+                        </p>
+                    </div>
+                    <div class="card-actions">
+                        <button class="btn btn-warning btn-warning-hover">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="card card-vertical">
+                    <div class="card-icon-action card-badge">
+                        <a class="link-none" href="#">
+                            <i class="fas fa-heart wish-icon" aria-hidden="true"></i></a>
+                    </div>
+                    <img loading="lazy"
+                        src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/nusnyjv4vv1teca0txre"
+                        alt="Pickle by Jhaji" class="card-media-img  p-0" />
+                    <div class="card-content">
+                        <h4 class="txt-bold card-details-title">Proteinated Milk</h4>
+                        <p class="card-details-subtitle">By Humpy A2</p>
+                        <p class="card-pricing">
+                            <span class="card-price">₹600</span>
+                            <del class="card-original-price">₹1000</del>
+                            <span class="card-discount">40% off</span>
+                        </p>
+                    </div>
+                    <div class="card-actions">
+                        <button class="btn btn-link btn-error btn-error-hover">OUT OF STOCK</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer-component">
+            <div class="footer-content-container p-8">
+                <div class="shop-details">
+                    <div>
+                        <img src="assets/images/brand-logo.png" alt="" class="brand-icon" />
+                        <p class="txt-sm">
+                            Shipping nature friendly products for your kids to your doorstep
+                        </p>
+                    </div>
+                    <ul class="shop-links gentle-flex-gap flex-justify-center txt-md">
+                        <li>
+                            <a class="link-none" href="#">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="link-none" href="#">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="link-none" href="#">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-categories">
+                    <h3 class="txt-sm">CATEGORIES</h3>
+                    <ul class="flex-column flex-align-center">
+                        <li class="my-4 category-link">
+                            <a href="#" class="link-none"> SKINCARE </a>
+                        </li>
+                        <li class="my-4 category-link">
+                            <a href="#" class="link-none"> CLOTHING </a>
+                        </li>
+                        <li class="my-4 category-link">
+                            <a href="#" class="link-none"> MEALTIME </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-categories">
+                    <h3 class="txt-sm">ACCOUNT</h3>
+                    <ul class="flex-column flex-align-center">
+                        <li class="my-4 category-link">
+                            <a href="#" class="link-none"> WISHLIST </a>
+                        </li>
+                        <li class="my-4 category-link">
+                            <a href="#" class="link-none"> VIEW CART </a>
+                        </li>
+                        <li class="my-4 category-link">
+                            <a href="#" class="link-none"> LOGIN/SIGNUP </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script>
+        const showButton=document.querySelector("#show-hide");
+        const differentFilterSections=document.querySelectorAll(".side-nav");
+        showButton.addEventListener("click",()=>{
+            differentFilterSections.forEach((eachSec)=>eachSec.classList.toggle("active"))
+        })
+    </script>
+</body>
+
+</html>

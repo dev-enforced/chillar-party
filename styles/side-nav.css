@@ -1,0 +1,33 @@
+.side-navigation-content{
+    justify-content: space-evenly;
+    color: var(--ecomm-txt);
+}
+
+.filter-input-section{
+    width: 100%;
+}
+
+.filter-input-slider{
+    width: 95%;
+}
+
+.side-nav{
+    border-bottom: var(--alert-border-format);
+    border-bottom-color:var(--ecomm-bg) ;
+}
+
+#show-hide{
+    display: none;
+}
+@media screen and (max-width:768px) {
+    .side-nav{
+        display:none;
+    }
+    #show-hide{
+        display: flex;
+    }
+    .side-nav.active{
+        display: flex;
+        transition: 4s ease-in;
+    }
+}
