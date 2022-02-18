@@ -22,14 +22,17 @@ html {
   flex-grow:1;
 }
 
-
 .flex-column {
   display: flex;
   flex-flow: column wrap;
   justify-content: flex-start;
 }
 
-.flex-space-between {
+.flex-space-between{
+  justify-content: space-between;
+}
+
+.flex-space-between-align-center {
   justify-content: space-between;
   align-items: center;
 }

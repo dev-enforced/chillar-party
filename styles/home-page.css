@@ -1,6 +1,7 @@
 @import url("base.css");
 @import url("ecom-navbar.css");
 @import url("footer.css");
+
 body {
   background-color: var(--ecomm-bg);
   font-family: "Roboto Slab", serif;
@@ -12,7 +13,6 @@ body {
   height: 100vh;
 }
 
-
 .image-banner {
   background-image: url("../assets/images/brand-items.png");
   background-size: cover;
@@ -21,7 +21,6 @@ body {
   height: 40rem;
   width: 100%;
 }
-
 
 .banner-title {
   font-family: "Amatic SC", cursive;
