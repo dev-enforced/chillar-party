@@ -1,0 +1,109 @@
+@import url("base.css");
+@import url("ecom-navbar.css");
+@import url("footer.css");
+@import url("side-nav.css");
+
+.general-page-layout{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-areas: 
+    "navigation navigation navigation"
+    "main-content main-content main-content"
+    "footer footer footer"
+    ;
+    font-family: 'Robotic Slab',serif;
+}
+
+.navbar-component{
+    grid-area: navigation;
+}
+
+.main-title{
+    background-color: var(--ecomm-food);
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+.main-content-container{
+    display: grid;
+    grid-template-columns: 3fr 3fr;
+    grid-area:main-content;
+    background-color: var(--ecomm-food);
+}
+
+.cart-item{
+    color: var(--ecomm-txt);
+    background-color: var(--ecomm-bg);
+    width: 100%;
+    border: transparent;
+    border-radius: var(--border-rd-sm);
+}
+
+.cart-image-container,
+.cart-content-container{
+    min-width: 50%;
+}
+
+.cart-img{
+    max-width: 100%;
+    height: 100%;
+}
+
+.qty-indicator{
+    max-width:30%;
+    outline: transparent;
+}
+
+.btn-outline{
+    background-color: transparent;
+    color: var(--primary-color);
+    border:var(--alert-border-format);
+    border-color: var(--primary-color);
+}
+.btn-outline:hover{
+    color:var(--text-color);
+    background-color: var(--primary-color);
+}
+
+.main-price-container{
+    width:80% ;
+    height: fit-content;
+    background-color: var(--secondary-bg);
+    color: var(--ecomm-secondary-txt);
+    justify-self: center;
+    border: transparent;
+}
+
+.footer-component{
+    grid-area: footer;
+}
+
+.place-order{
+    width: 100%;
+}
+
+@media screen and (max-width:768px){
+    html{
+        font-size: 11px;
+    }
+    .general-page-layout{
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "navigation"
+        "main-content"
+        "footer";
+    }
+
+    .main-content-container{
+        grid-template-columns: 1fr;
+        
+    }
+    .main-items-container{
+        order:2;
+        justify-self: start;
+    }
+    .main-price-container{
+        order:1;
+        justify-self: start;
+    }
+}
