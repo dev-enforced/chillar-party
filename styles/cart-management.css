@@ -18,6 +18,12 @@
     grid-area: navigation;
 }
 
+.main-title{
+    background-color: var(--ecomm-food);
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
 .main-content-container{
     display: grid;
     grid-template-columns: 3fr 3fr;
