@@ -18,14 +18,13 @@ html {
   flex-flow: row wrap;
 }
 
-.flex-grow-1{
-  flex-grow:1;
-}
-
 .flex-column {
   display: flex;
-  flex-flow: column wrap;
-  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.flex-grow-1{
+  flex-grow:1;
 }
 
 .flex-space-between{
@@ -60,4 +59,21 @@ html {
 
 .pos-fixed {
   position: fixed;
+}
+
+.text-center{
+  text-align: center;
+}
+
+.m-auto{
+  margin: auto;
+}
+
+.ml-auto{
+  margin-left: auto;
+}
+
+.bd-bottom{
+  border-bottom:var(--alert-border-format);
+  border-bottom-color:var(--ecomm-bg) ;
 }

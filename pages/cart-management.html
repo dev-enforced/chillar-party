@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta Information -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Roshan J" />
+    <meta
+      name="description"
+      content="Gentle UI is a component library having pre built components with the motive of creating good UIs."
+    />
+
+    <!-- Custom Favicon -->
+    <link
+      rel="icon"
+      href="https://img.icons8.com/color/64/000000/boy-stroller.png"
+    />
+
+    <!-- Fonts and icons stylesheets -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Roboto+Slab:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+    <!-- Stylesheets attached -->
+    <link
+      rel="stylesheet"
+      href="https://deploy-preview-12--gentle-ui.netlify.app/gentle-imports.css"
+    />
+    <!-- Main stylesheet added -->
+    <link rel="stylesheet" href="../styles/cart-management.css" />
+    <title>Cart Management</title>
+  </head>
+  <body>
+    <div class="cart-management-layout">
+      <!-- Navigation begins -->
+      <nav class="gentle-navbar chillar-ecom-nav navbar-component">
+        <div class="brand">
+          <a href="../index.html" class="link-none">
+            <img
+              loading="lazy"
+              src="../assets/images/brand-logo.png"
+              alt="brand description"
+              class="brand-icon"
+            />
+          </a>
+        </div>
+        <div class="gentle-search-group gentle-navbar-search">
+          <i class="fas fa-search search-icon"></i>
+          <input
+            type="search"
+            class="gentle-search-bar"
+            placeholder="Search-for-products"
+          />
+        </div>
+        <ul class="gentle-nav-links ecom-nav-links">
+          <li>
+            <a class="link-none" href=""> LOGIN </a>
+          </li>
+          <li>
+            <a class="link-none" href="cart-management.html">
+              <div class="badge mx-2">
+                <i class="fas fa-cart-plus fa-2x"></i>
+                <div class="badge-number gentle-flex-center">
+                  <span>2</span>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a class="link-none" href="">
+              <div class="badge mx-2">
+                <i class="fas fa-heart fa-2x"></i>
+                <div class="badge-number gentle-flex-center">
+                  <span>2</span>
+                </div>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <!-- Navigation ends -->
+        <div class="main-content-container p-8">
+            <div class="main-items-container gentle-flex-gap flex-column">
+                <div class="cart-item gentle-flex-gap m-auto">
+                <div class="cart-image-container">
+                    <img
+                    src="https://beelittle.in/wp-content/uploads/Blue-love-Organic-Sweaters.webp"
+                    alt="Winter clothing for young"
+                    class="cart-img"
+                    />
+                </div>
+                <div
+                    class="cart-content-container flex-column flex-justify-center gentle-flex-gap p-6 txt-sm"
+                >
+                    <div class="cart-item-title">
+                    <h3>Organic Sweaters</h3>
+                    </div>
+                    <div class="cart-item-pricing gentle-flex-gap">
+                    <span class="cart-discounted-price">₹450</span>
+                    <del class="cart-original-price">₹900</del>
+                    </div>
+                    <div class="cart-item-quantity flex-space-between-align-center">
+                    <span>Quantity</span>
+                    <div class="gentle-flex-gap flex-justify-center">
+                        <a href="#" class="link-none qty-link">
+                        <i class="fas fa-plus"></i>
+                        </a>
+                        <input
+                        type="number"
+                        value="1"
+                        min="0"
+                        class="qty-indicator"
+                        />
+                        <a href="#" class="link-none qty-link">
+                        <i class="fas fa-minus"></i>
+                        </a>
+                    </div>
+                    </div>
+                    <div class="cart-actions flex-column gentle-flex-gap p-3">
+                    <button class="btn btn-warning btn-warning-hover">
+                        <a class="link-none" href="">Remove From Cart</a>
+                    </button>
+                    <button class="btn btn-outline">
+                        <a class="link-none" href=""> Move To Wishlist </a>
+                    </button>
+                    </div>
+                </div>
+                </div>
+                <div class="cart-item gentle-flex-gap m-auto">
+                <div class="cart-image-container">
+                    <img
+                    src="https://beelittle.in/wp-content/uploads/Blue-love-Organic-Sweaters.webp"
+                    alt="Winter clothing for young"
+                    class="cart-img"
+                    />
+                </div>
+                <div
+                    class="cart-content-container flex-column flex-justify-center gentle-flex-gap p-6 txt-sm"
+                >
+                    <div class="cart-item-title">
+                    <h3>Organic Sweaters</h3>
+                    </div>
+                    <div class="cart-item-pricing gentle-flex-gap">
+                    <span class="cart-discounted-price">₹450</span>
+                    <del class="cart-original-price">₹900</del>
+                    </div>
+                    <div class="cart-item-quantity flex-space-between-align-center">
+                    <span>Quantity</span>
+                    <div class="gentle-flex-gap flex-justify-center">
+                        <a href="#" class="link-none qty-link">
+                        <i class="fas fa-plus"></i>
+                        </a>
+                        <input
+                        type="number"
+                        value="1"
+                        min="0"
+                        class="qty-indicator"
+                        />
+                        <a href="#" class="link-none qty-link">
+                        <i class="fas fa-minus"></i>
+                        </a>
+                    </div>
+                    </div>
+                    <div class="cart-actions flex-column gentle-flex-gap p-3">
+                    <button class="btn btn-warning btn-warning-hover">
+                        <a class="link-none" href="">Remove From Cart</a>
+                    </button>
+                    <button class="btn btn-outline">
+                        <a class="link-none" href=""> Move To Wishlist </a>
+                    </button>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="main-price-container p-10 my-5">
+                <div class="price-title py-5 bd-bottom">
+                    <h3>PRICE DETAILS</h3>
+                </div>   
+                <div class="price-details py-5 bd-bottom">
+                    <div class="gentle-flex-gap flex-space-between">
+                        <h4>Price (2 items)</h4>
+                        <h4>1300</h4>
+                    </div>
+                    <div class="gentle-flex-gap flex-space-between">
+                        <h4>Discount (2 items)</h4>
+                        <h4>300</h4>
+                    </div>
+                    <div class="gentle-flex-gap flex-space-between">
+                        <h4>Delivery Cost</h4>
+                        <h4>200</h4>
+                    </div>
+                </div>
+                <div class="total-price gentle-flex-gap flex-space-between bd-bottom py-5">
+                    <h4>TOTAL AMOUNT</h4>
+                    <h4>1200</h4>
+                </div>
+                <div class="gentle-flex-gap py-5">
+                    <button class="btn btn-outline place-order">
+                        <a href="#" class="link-none">
+                            PLACE ORDER
+                        </a>
+                    </button>
+                </div>   
+            </div>
+        </div>
+      
+      <footer class="footer-component">
+        <div class="footer-content-container p-8">
+          <div class="shop-details">
+            <div>
+              <img
+                src="assets/images/brand-logo.png"
+                alt=""
+                class="brand-icon"
+              />
+              <p class="txt-sm">
+                Shipping nature friendly products for your kids to your doorstep
+              </p>
+            </div>
+            <ul class="shop-links gentle-flex-gap flex-justify-center txt-md">
+              <li>
+                <a class="link-none" href="#">
+                  <i class="fab fa-youtube"></i>
+                </a>
+              </li>
+              <li>
+                <a class="link-none" href="#">
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a class="link-none" href="#">
+                  <i class="fab fa-linkedin"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-categories">
+            <h3 class="txt-sm">CATEGORIES</h3>
+            <ul class="flex-column flex-align-center">
+              <li class="my-4 category-link">
+                <a href="#" class="link-none"> SKINCARE </a>
+              </li>
+              <li class="my-4 category-link">
+                <a href="#" class="link-none"> CLOTHING </a>
+              </li>
+              <li class="my-4 category-link">
+                <a href="#" class="link-none"> MEALTIME </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-categories">
+            <h3 class="txt-sm">ACCOUNT</h3>
+            <ul class="flex-column flex-align-center">
+              <li class="my-4 category-link">
+                <a href="#" class="link-none"> WISHLIST </a>
+              </li>
+              <li class="my-4 category-link">
+                <a href="#" class="link-none"> VIEW CART </a>
+              </li>
+              <li class="my-4 category-link">
+                <a href="#" class="link-none"> LOGIN/SIGNUP </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
