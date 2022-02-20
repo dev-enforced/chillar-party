@@ -8,6 +8,7 @@
     grid-template-columns: 1fr 2fr 1fr;
     grid-template-areas: 
     "navigation navigation navigation"
+    "main-title main-title main-title"
     "main-content main-content main-content"
     "footer footer footer"
     ;
@@ -22,6 +23,7 @@
     background-color: var(--ecomm-food);
     color: var(--primary-color);
     text-decoration: underline;
+    grid-area: main-title;
 }
 
 .main-content-container{
@@ -54,16 +56,6 @@
     outline: transparent;
 }
 
-.btn-outline{
-    background-color: transparent;
-    color: var(--primary-color);
-    border:var(--alert-border-format);
-    border-color: var(--primary-color);
-}
-.btn-outline:hover{
-    color:var(--text-color);
-    background-color: var(--primary-color);
-}
 
 .main-price-container{
     width:80% ;
@@ -90,6 +82,7 @@
         grid-template-columns: 1fr;
         grid-template-areas: 
         "navigation"
+        "main-title"
         "main-content"
         "footer";
     }
@@ -105,5 +98,8 @@
     .main-price-container{
         order:1;
         justify-self: start;
+    }
+    .main-title{
+        order:-1;
     }
 }
