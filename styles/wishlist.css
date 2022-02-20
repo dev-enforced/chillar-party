@@ -2,52 +2,60 @@
 @import url("ecom-navbar.css");
 @import url("footer.css");
 
-.general-page-layout{
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    grid-template-areas: 
+.general-page-layout {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-areas:
     "navigation navigation navigation"
     "main-content main-content main-content"
-    "footer footer footer"
-    ;
-    font-family: 'Robotic Slab',serif;
+    "footer footer footer";
+  font-family: "Robotic Slab", serif;
 }
 
-.navbar-component{
-    grid-area: navigation;
+.navbar-component {
+  grid-area: navigation;
 }
 
-.main-content{
-    grid-area: main-content;
-    padding:4rem;
-    background-color: var(--ecomm-food);
+.main-content {
+  grid-area: main-content;
+  padding: 4rem;
+  background-color: var(--ecomm-food);
 }
 
-.main-title{
-    color: var(--ecomm-secondary-text);
+.main-title {
+  color: var(--ecomm-secondary-text);
 }
 
-.card-actions .btn{
-    width:80%;
+.card-actions .btn {
+  width: 80%;
 }
 
-.footer-component{
-    grid-area: footer;
+.card-badge {
+  color: var(--primary-color);
 }
 
-.btn-outline{
-    color: var(--secondary-bg);
+.btn-link {
+  color: var(--primary-color);
+  background-color: var(--secondary-bg);
 }
 
-@media screen and (max-width:768px) {
-    html{
-        font-size: 11px;
-    }
-    .general-page-layout{
-        grid-template-columns: 1fr;
-        grid-template-areas: 
-        "navigation"
-        "main-content"
-        "footer";
-    }
+.footer-component {
+  grid-area: footer;
+}
+
+.btn-outline {
+  color: var(--secondary-bg);
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 11px;
+  }
+  .general-page-layout {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "navigation"
+      "main-content"
+      "footer";
+  }
 }
