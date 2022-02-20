@@ -94,35 +94,39 @@
           <form class="gentle-form-group gentle-flex-gap txt-sm">
             <div class="gentle-flex-gap name-taker flex-wrap">
               <div class="gentle-input-group">
-                <label class="gentle-input-label">First Name</label>
+                <label class="gentle-input-label" for="user-first-name">First Name</label>
                 <input
                   type="text"
                   class="gentle-input"
+                  id="user-first-name"
                   placeholder="e.g. Ashok"
                 />
               </div>
               <div class="gentle-input-group">
-                <label class="gentle-input-label txt-sm">Last Name</label>
+                <label class="gentle-input-label txt-sm" for="user-last-name">Last Name</label>
                 <input
                   type="text"
                   class="gentle-input"
+                  id="user-last-name"
                   placeholder="e.g. Kamte"
                 />
               </div>
             </div>
             <div class="gentle-input-group">
-              <label class="gentle-input-label">Email Address</label>
+              <label class="gentle-input-label" for="user-email-address">Email Address</label>
               <input
                 type="email"
                 class="gentle-input"
+                id="user-email-address"
                 placeholder="e.g. ashok_kamte@rediff.com"
               />
             </div>
             <div class="gentle-input-group">
-              <label class="gentle-input-label">Password</label>
+              <label class="gentle-input-label" for="user-password">Password</label>
               <input
                 type="password"
                 class="gentle-input"
+                id="user-password"
                 placeholder="******"
               />
             </div>
@@ -141,20 +145,19 @@
               </label>
             </div>
             <div
-              class="submit-action gentle-flex-gap flex-column flex-justify-center"
+              class="submit-action gentle-flex-gap flex-column flex-align-center"
             >
               <button
                 type="submit"
                 class="btn btn-info btn-info-hover submit-btn"
               >
-                <a href="#" class="link-none"> CREATE NEW ACCOUNT </a>
+                CREATE NEW ACCOUNT
               </button>
-              <button class="btn btn-link">
-                <a href="auth-login.html" class="link-none"
+              <a href="auth-login.html" class="link-none btn btn-link"
                   >Already have an Account? Login
                   <i class="fas fa-chevron-right px-1"></i>
-                </a>
-              </button>
+              </a>
+              
             </div>
           </form>
         </div>

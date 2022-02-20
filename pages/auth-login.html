@@ -95,18 +95,20 @@
           </div>
           <form class="gentle-form-group gentle-flex-gap txt-sm">
             <div class="gentle-input-group">
-              <label class="gentle-input-label">Email Address</label>
+              <label class="gentle-input-label" for="user-email">Email Address</label>
               <input
                 type="email"
                 class="gentle-input"
+                id="user-email"
                 placeholder="e.g. ashok_kamte@rediff.com"
               />
             </div>
             <div class="gentle-input-group">
-              <label class="gentle-input-label">Password</label>
+              <label class="gentle-input-label" for="user-password">Password</label>
               <input
                 type="password"
                 class="gentle-input"
+                id="user-password"
                 placeholder="******"
               />
             </div>
@@ -116,12 +118,13 @@
               <label
                 for="permission"
                 name="light"
+                for="user-permission"
                 class="gentle-flex-gap flex-align-center text-cursor-pointer checkbox-input-container mb-2"
               >
                 <input
                   type="checkbox"
                   class="checkbox-input text-cursor-pointer"
-                  id="permission"
+                  id="user-permission"
                 />
                 <span>Remember Me</span>
               </label>
@@ -130,20 +133,19 @@
               </div>
             </div>
             <div
-              class="submit-action gentle-flex-gap flex-column flex-justify-center"
+              class="submit-action gentle-flex-gap flex-column flex-align-center"
             >
               <button
                 type="submit"
                 class="btn btn-info btn-info-hover submit-btn"
               >
-                <a href="#" class="link-none"> LOG IN </a>
+                LOG IN
               </button>
-              <button class="btn btn-link">
                 <a href="auth-signup.html" class="link-none"
                   >Create New Account
                   <i class="fas fa-chevron-right px-1"></i>
                 </a>
-              </button>
+              
             </div>
           </form>
         </div>
