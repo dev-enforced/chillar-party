@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta Information -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Roshan J" />
+    <meta
+      name="description"
+      content="Chillar Party is a marketplace for parents who want to buy sustainable,organic products for their young kids"
+    />
+
+    <!-- Custom Favicon -->
+    <link
+      rel="icon"
+      href="https://img.icons8.com/color/64/000000/boy-stroller.png"
+    />
+
+    <!-- Fonts and icons stylesheets -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Roboto+Slab:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+    <!-- Stylesheets attached -->
+    <link
+      rel="stylesheet"
+      href="https://deploy-preview-12--gentle-ui.netlify.app/gentle-imports.css"
+    />
+    <!-- Main stylesheet added -->
+    <link rel="stylesheet" href="../styles/authentication.css" />
+    <title>Login | Chillar-Party</title>
+  </head>
+  <body>
+    <section class="general-page-layout">
+      <!-- Navigation begins -->
+      <nav class="gentle-navbar chillar-ecom-nav navbar-component">
+        <div class="brand">
+          <a href="../index.html" class="link-none">
+            <img
+              loading="lazy"
+              src="../assets/images/brand-logo.png"
+              alt="brand description"
+              class="brand-icon"
+            />
+          </a>
+        </div>
+        <div class="gentle-search-group gentle-navbar-search">
+          <i class="fas fa-search search-icon"></i>
+          <input
+            type="search"
+            class="gentle-search-bar"
+            placeholder="Search-for-products"
+          />
+        </div>
+        <ul class="gentle-nav-links ecom-nav-links">
+          <li>
+            <a class="link-none" href="auth-signup.html"> SIGN UP </a>
+          </li>
+          <li>
+            <a class="link-none" href="cart-management.html">
+              <div class="badge mx-2">
+                <i class="fas fa-cart-plus fa-2x"></i>
+                <div class="badge-number gentle-flex-center">
+                  <span>2</span>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a class="link-none" href="wishlist.html">
+              <div class="badge mx-2">
+                <i class="fas fa-heart fa-2x"></i>
+                <div class="badge-number gentle-flex-center">
+                  <span>2</span>
+                </div>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <!-- Navigation ends -->
+
+      <section class="main-content flex-column flex-center">
+        <div
+          class="main-content-container flex-column flex-justify-center p-10"
+        >
+          <div class="form-name text-center">
+            <h3>LOGIN</h3>
+          </div>
+          <form class="gentle-form-group gentle-flex-gap txt-sm">
+            <div class="gentle-input-group">
+              <label class="gentle-input-label" for="user-email">Email Address</label>
+              <input
+                type="email"
+                class="gentle-input"
+                id="user-email"
+                placeholder="e.g. ashok_kamte@rediff.com"
+              />
+            </div>
+            <div class="gentle-input-group">
+              <label class="gentle-input-label" for="user-password">Password</label>
+              <input
+                type="password"
+                class="gentle-input"
+                id="user-password"
+                placeholder="******"
+              />
+            </div>
+            <div
+              class="permission-check gentle-flex-gap flex-wrap flex-space-between flex-align-center"
+            >
+              <label
+                for="permission"
+                name="light"
+                for="user-permission"
+                class="gentle-flex-gap flex-align-center text-cursor-pointer checkbox-input-container mb-2"
+              >
+                <input
+                  type="checkbox"
+                  class="checkbox-input text-cursor-pointer"
+                  id="user-permission"
+                />
+                <span>Remember Me</span>
+              </label>
+              <div class="forget-password">
+                <a href="#" class="link-none"> Forgot Password? </a>
+              </div>
+            </div>
+            <div
+              class="submit-action gentle-flex-gap flex-column flex-align-center"
+            >
+              <button
+                type="submit"
+                class="btn btn-info btn-info-hover submit-btn"
+              >
+                LOG IN
+              </button>
+                <a href="auth-signup.html" class="link-none"
+                  >Create New Account
+                  <i class="fas fa-chevron-right px-1"></i>
+                </a>
+              
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <!-- Footer Component Begins -->
+      <footer class="footer-component">
+        <div class="footer-content-container p-8">
+          <div class="shop-details">
+            <div>
+              <img
+                src="../assets/images/brand-logo.png"
+                alt="brand-logo"
+                class="brand-icon"
+              />
+              <p class="txt-sm">
+                Shipping nature friendly products for your kids to your doorstep
+              </p>
+            </div>
+            <ul class="shop-links gentle-flex-gap flex-justify-center txt-md">
+              <li>
+                <a class="link-none" href="#">
+                  <i class="fab fa-youtube"></i>
+                </a>
+              </li>
+              <li>
+                <a class="link-none" href="#">
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a class="link-none" href="#">
+                  <i class="fab fa-linkedin"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-categories">
+            <h3 class="txt-sm">CATEGORIES</h3>
+            <ul class="flex-column flex-align-center">
+              <li class="my-4 category-link">
+                <a href="#" class="link-none"> SKINCARE </a>
+              </li>
+              <li class="my-4 category-link">
+                <a href="#" class="link-none"> CLOTHING </a>
+              </li>
+              <li class="my-4 category-link">
+                <a href="#" class="link-none"> MEALTIME </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-categories">
+            <h3 class="txt-sm">ACCOUNT</h3>
+            <ul class="flex-column flex-align-center">
+              <li class="my-4 category-link">
+                <a href="wishlist.html" class="link-none"> WISHLIST </a>
+              </li>
+              <li class="my-4 category-link">
+                <a href="cart-management.html" class="link-none"> VIEW CART </a>
+              </li>
+              <li class="my-4 category-link">
+                <a href="auth-signup.html" class="link-none"> LOGIN/SIGNUP </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+      <!-- Footer Component Ends -->
+    </section>
+  </body>
+</html>

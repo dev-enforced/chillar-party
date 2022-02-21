@@ -23,11 +23,11 @@ html {
   flex-direction: column;
 }
 
-.flex-grow-1{
-  flex-grow:1;
+.flex-grow-1 {
+  flex-grow: 1;
 }
 
-.flex-space-between{
+.flex-space-between {
   justify-content: space-between;
 }
 
@@ -53,6 +53,10 @@ html {
   flex-wrap: nowrap;
 }
 
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
 .pos-relative {
   position: relative;
 }
@@ -61,48 +65,47 @@ html {
   position: fixed;
 }
 
-.text-center{
+.text-center {
   text-align: center;
 }
 
-.m-auto{
+.m-auto {
   margin: auto;
 }
 
-.ml-auto{
+.ml-auto {
   margin-left: auto;
 }
 
-.bd-bottom{
-  border-bottom:var(--alert-border-format);
-  border-bottom-color:var(--ecomm-bg) ;
+.bd-bottom {
+  border-bottom: var(--alert-border-format);
+  border-bottom-color: var(--ecomm-bg);
 }
 
-.btn-outline{
+.btn-outline {
   background-color: transparent;
   color: var(--primary-color);
-  border:var(--alert-border-format);
+  border: var(--alert-border-format);
   border-color: var(--primary-color);
 }
-.btn-outline:hover{
-  color:var(--text-color);
+.btn-outline:hover {
+  color: var(--text-color);
   background-color: var(--primary-color);
 }
 
-.badge-content{
+.badge-content {
   position: absolute;
   top: 10px;
   clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 0 100%, 0 50%, 0 0);
-  padding:0.5rem 2rem 0.5rem 1rem;
+  padding: 0.5rem 2rem 0.5rem 1rem;
   background-color: var(--primary-color);
   color: var(--ecomm-txt);
 }
 
-.card-badge{
+.card-badge {
   position: absolute;
-  top:10px;
-  right:1rem;
+  top: 10px;
+  right: 1rem;
   background-color: var(--ecomm-bg);
   border-radius: var(--border-rd-circle);
-  color:var(--primary-color);
 }
